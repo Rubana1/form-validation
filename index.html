@@ -47,16 +47,12 @@
                         </select>
                     </div>
                     <div class="gender">
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
-                        
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-
-                        <input type="radio" id="transgender" name="gender" value="transgender">
-                        <label for="transgender">Transgender</label>
-
-                    
+                        <select id="gender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="transgender">Transgender</option>
+                        </select>
                     </div>
                     
                     <input type="submit" value="Sign Up">

@@ -156,25 +156,17 @@ span {
     margin-right: 0;
 }
 
-.signupform .gender {
-    display: flex;
-    justify-content: flex-start;    /* Align items to the left */
-    align-items: center;            /* Vertically align radio buttons and labels */
-    margin-bottom: 20px;
+.signupform .gender select {
+    width: 100%; /* Full width like input boxes */
+    height: 50px; /* Same height as input boxes */
+    margin: 10px 0px; /* Same margin as input boxes */
+    padding: 0px 10px; /* Same padding as input boxes */
+    outline: none; /* Remove default outline */
+    border: 1px solid #ccc; /* Same border as input boxes */
+    font-size: 18px; /* Same font size as input boxes */
+    border-radius: 10px; /* Same border radius as input boxes */
 }
 
-.signupform .gender input[type="radio"] {
-    width: 15px;    /* Small width for the radio button */
-    height: 15px;   /* Small height for the radio button */
-    margin-right: 3px;   /* Reduced space between the radio button and the label */
-}
-
-.signupform .gender label {
-    font-size: 18px;     /* Label font size */
-    margin-left: 0; 
-    margin: 0;           /* Remove any additional margin around the label */
-    padding: 0;        /* No extra space between the radio button and label */
-}
 
 
 

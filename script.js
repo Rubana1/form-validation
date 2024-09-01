@@ -64,14 +64,14 @@ function showSignUpForm() {
 document.getElementById('signUpForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var firstName = document.getElementById('firstName').value;
-    var surname = document.getElementById('surname').value;
-    var emailOrPhone = document.getElementById('emailOrPhone').value;
-    var newPassword = document.getElementById('newPassword').value;
+    var firstName = document.getElementById('firstName').value.trim();
+    var surname = document.getElementById('surname').value.trim();
+    var emailOrPhone = document.getElementById('emailOrPhone').value.trim();
+    var newPassword = document.getElementById('newPassword').value.trim();
     var birthDay = document.getElementById('birthDay').value;
     var birthMonth = document.getElementById('birthMonth').value;
     var birthYear = document.getElementById('birthYear').value;
-    var gender = document.querySelector('input[name="gender"]:checked');
+    var gender = document.getElementById('gender').value;
 
     if (!firstName || !surname || !emailOrPhone || !newPassword || !birthDay || !birthMonth || !birthYear || !gender) {
         alert('Please fill in all fields.');
