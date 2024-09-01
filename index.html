@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftpart">
+            <h1>facebook</h1>
+            <h3>Facebook helps you connect and share with the people in your life</h3>
+        </div>
+        <div class="rightpart">
+            <div class="loginpage">
+                <form id="loginForm">
+                    <input type="text" placeholder="Email or Phone number" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="submit" value="Log In">
+                </form>
+                
+                <hr>
+                <div class="createaccount" onclick="showSignUpForm()">Create a new account</div>
+            </div>
+
+            <div class="signupform" id="signupForm" style="display:none;">
+                <h2>Sign Up</h2>
+                
+                <form id="signUpForm">
+                    <input type="text" id="firstName" placeholder="First name" required>
+                    <input type="text" id="surname" placeholder="Surname" required>
+                    <input type="text" id="emailOrPhone" placeholder="Mobile number or email address" required>
+                    <input type="password" id="newPassword" placeholder="New password" required>
+                    <div class="dob">
+                        <select id="birthDay" required>
+                            <option value="" disabled selected>Date</option>
+                            <!-- Add day options here -->
+                        </select>
+                        <select id="birthMonth" required>
+                            <option value="" disabled selected>Month</option>
+                            <!-- Add month options here -->
+                        </select>
+                        <select id="birthYear" required>
+                            <option value="" disabled selected>Year</option>
+                            <!-- Add year options here -->
+                        </select>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="transgender" name="gender" value="transgender">
+                        <label for="transgender">Transgender</label>
+
+                    
+                    </div>
+                    
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

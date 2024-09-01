@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: rgb(222, 220, 224);
+}
+
+.container {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftpart {
+    width: 40%;
+    margin-left: -100px;
+}
+
+h1 {
+    color: royalblue;
+    font-size: 80px;
+}
+
+h3 {
+    color: black;
+    font-size: 30px;
+}
+
+.Rightpart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginpage, .signupform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 450px;
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.1),
+                10px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.loginpage {
+    height: 370px;
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+input {
+    width: 380px;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+p {
+    color: royalblue;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 320px;
+    margin: 20px 0px;
+}
+
+.createaccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 30px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+span {
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 20px;
+}
+
+.signupform h2 {
+    margin-top: 0;
+}
+
+.signupform {
+    width: 450px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.1),
+                10px 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupform form {
+    width: 100%;
+}
+
+.signupform .dob, .signupform .gender {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signupform .dob select {
+    flex: 1;
+    margin-right: 10px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+}
+
+.signupform .dob select:last-child {
+    margin-right: 0;
+}
+
+.signupform .gender {
+    display: flex;
+    justify-content: flex-start;    /* Align items to the left */
+    align-items: center;            /* Vertically align radio buttons and labels */
+    margin-bottom: 20px;
+}
+
+.signupform .gender input[type="radio"] {
+    width: 15px;    /* Small width for the radio button */
+    height: 15px;   /* Small height for the radio button */
+    margin-right: 3px;   /* Reduced space between the radio button and the label */
+}
+
+.signupform .gender label {
+    font-size: 18px;     /* Label font size */
+    margin-left: 0; 
+    margin: 0;           /* Remove any additional margin around the label */
+    padding: 0;        /* No extra space between the radio button and label */
+}
+
+
+
+.signupform .dob, .signupform .gender {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signupform .dob select {
+    width: 31%;
+}
+
+.signupform input[type="submit"] {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
